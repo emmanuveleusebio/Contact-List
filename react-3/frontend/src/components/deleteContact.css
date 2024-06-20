@@ -1,0 +1,33 @@
+.deletePopup {
+     background-color: #1c1c1c;
+    color: #aba3a3;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    
+    top: 0;
+    left: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+.hideDelete{
+    display: none;
+}
+
+.deleteButton {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.deletePopup button:hover {
+    background-color: #555; /* Darken on hover */
+}

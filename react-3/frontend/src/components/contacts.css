@@ -1,0 +1,15 @@
+.contactCard {
+  max-width: 1000px;
+  margin: auto;
+}
+.contactTable {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.contactTable th,
+.contactTable td {
+  background-color: #121212 !important;
+  color: #aba3a3 !important;
+  
+}

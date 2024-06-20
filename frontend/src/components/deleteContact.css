@@ -1,0 +1,48 @@
+.deletePopup {
+     background-color: #aba3a3;
+     font-weight: 700;
+    color: #333;
+    padding: 50px;
+    border-radius: 8px;
+    max-width: 600px;
+    box-shadow: 4.0px 8.0px 8.0px hsl(0, 100%, 1%);
+    text-align: center;
+    top: 0;
+    left: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+}
+.popMessage{
+    font-size: 18px;
+}
+.hideDelete{
+    display: none;
+}
+
+.deleteButton {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #f90505;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.cancelDel{
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.deletePopup .deleteButton:hover{
+    background: #6e0202;
+}
+.deletePopup .cancelDel:hover {
+    background-color: #555; /* Darken on hover */
+}

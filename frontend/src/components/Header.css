@@ -1,0 +1,83 @@
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #121212; 
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+}
+.searchSection{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.heading{
+    color: #aba3a3;
+}
+.addContact {
+    background-color: #333; 
+    color: #aba3a3;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    height: fit-content;
+}
+
+.addContact:hover {
+    background-color: #767171; 
+    color:white
+}
+
+
+
+.totalCount {
+    background-color: #333;
+    color: #aba3a3;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+   
+    height: 30px;
+}
+
+.searchBar {
+    background-color: #333;
+    color: #aba3a3;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.searchBar::placeholder {
+    color: #ccc;
+}
+
+p {
+    margin-right: 10px;
+    font-size: 14px;
+}
+.searchDiv{
+    background: #333;
+    padding: 0 30px;
+    border-radius: 10px;
+    position: relative;
+}
+.searchDiv i{
+    color: #625e5e;
+  position: absolute;
+  left: 10px;
+  top: 8px;
+}
+p span {
+    color: #ff8f00; /* Accent color */
+}

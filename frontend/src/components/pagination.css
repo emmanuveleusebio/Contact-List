@@ -1,0 +1,29 @@
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.page-item {
+  margin: 0 5px;
+}
+.page-item.active .page-link {
+  background-color: #aba3a3;
+  color: #0b0b0b;
+  box-shadow: none;
+  border: none;
+}
+.page-item .page-link {
+  background-color: #0c0c0c;
+  color: #6c757d;
+  border: none;
+  box-shadow: 4.0px 8.0px 8.0px hsl(0, 100%, 1%);
+  font-weight: 700;
+}
+
+.page-item.disabled .page-link {
+  color: #6c757d;
+  pointer-events: none;
+  cursor: not-allowed;
+  background-color: #080707;
+  border:none;
+}

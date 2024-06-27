@@ -14,10 +14,10 @@ const getService = async (currentPage, limit, search) => {
     const page = currentPage || 1;
     const pageSize = limit || 5;
     const skip = (currentPage - 1) * pageSize;
-    const matchCondition = search 
-    ? { name: { $regex: new RegExp(search, "i") } }
-    : {};
-    
+    const matchCondition = search
+        ? { name: { $regex: new RegExp(search, "i") } }
+        : {};
+
     try {
         const datas = await contactModel.aggregate([
             { $match: matchCondition },

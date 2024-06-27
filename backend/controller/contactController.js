@@ -1,4 +1,4 @@
-const  {addService, getService, editService, deleteService}  = require('../servies/contactServices')
+const { addService, getService, editService, deleteService } = require('../servies/contactServices')
 
 const addContact = async (req, res) => {
     try {
@@ -7,7 +7,7 @@ const addContact = async (req, res) => {
         res.status(200).json(postContact)
     } catch (error) {
         res.status(400)
-        console.log(error,'error while posting data')
+        console.log(error, 'error while posting data')
     }
 }
 
@@ -25,9 +25,9 @@ const getContacts = async (req, res) => {
 }
 const editContact = async (req, res) => {
     try {
-       const editedData = req.body;
-       const updateEdit = await editService(editedData)
-       res.status(200).json(updateEdit);
+        const editedData = req.body;
+        const updateEdit = await editService(editedData)
+        res.status(200).json(updateEdit);
     } catch (error) {
         console.log(error)
     }
@@ -43,8 +43,8 @@ const deleteContact = async (req, res) => {
 }
 
 module.exports = {
-     addContact,
-     getContacts,
-     editContact,
-     deleteContact,
-    };
+    addContact,
+    getContacts,
+    editContact,
+    deleteContact,
+};

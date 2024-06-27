@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
-import { deleteToggle } from './deleteToggle';
-import { toggleButton } from './addToggle';
+import { deleteToggle } from './combineToggle';
+import { addToggle } from './combineToggle';
 
 export const updateContact = createAsyncThunk('contact/updateContact', async (updatedContact) => {
     const response = await axios.put(`http://localhost:3001/contacts/${updatedContact.id}`, updatedContact);
@@ -10,7 +10,7 @@ export const updateContact = createAsyncThunk('contact/updateContact', async (up
 export const addContact = createAsyncThunk('contact/addContact', async (newContact, { dispatch }) => {
     const response = await axios.post('http://localhost:3001', newContact)
     await dispatch(searchPagination({ search: '', currentPage: 1 }));
-    dispatch(toggleButton());
+    dispatch(addToggle());
     return response.data;
 })
 export const deleteContact = createAsyncThunk('contact/delete', async (delContact, { dispatch }) => {

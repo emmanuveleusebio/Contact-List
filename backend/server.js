@@ -13,5 +13,5 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/', contactRoutes)
 
 app.listen(port, () => {
-    console.log("running on port",port);
+    console.log("running on port", port);
 })
